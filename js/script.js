@@ -70,6 +70,7 @@ $(document).ready(function(){
     title = record.response.song.title;
     artist = record.response.song.artist_names;
     player = record.response.song.apple_music_player_url;
+    albumCover = record.response.song.song_art_image_url;    
     var tab = window.open();
     tab.document.write('<title>GENIUS</title>' 
     + '<script src="https://kit.fontawesome.com/6c5e78ae37.js" crossorigin="anonymous"></script>' 
@@ -77,7 +78,8 @@ $(document).ready(function(){
     + '<link rel="stylesheet" href="/GENIUS/css/main.css">' 
     + '<h1 id="close"> <i class="fa-solid fa-arrow-left-long"></i>New Search </h1>'
     + '<h1 id="artist-names">' + title + '</h1>'
-    + '<h3 id="song">' + artist + '</h3>'
+    + '<p id="song">' + artist + '</p>'
+    + '<div id="album-frame"> <img id="album-picture" src="' + albumCover + '">'
     + '<div id="frame"> <iframe src="' + player + '" title=""></iframe> </div>'
     + '<div id="container"><div id="song-card-list"> </div> </div> '
     + ' <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>'
