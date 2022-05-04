@@ -79,7 +79,7 @@ $(document).ready(function(){
     + '<h1 id="close"> <i class="fa-solid fa-arrow-left-long"></i>New Search </h1>'
     + '<h1 id="artist-names">' + title + '</h1>'
     + '<p id="song">' + artist + '</p>'
-    + '<div id="album-frame"> <img id="album-picture" src="' + albumCover + '">'
+    + '<div id="album-frame"> <img id="album-picture" src="' + albumCover + '"></div>'
     + '<div id="frame"> <iframe src="' + player + '" title=""></iframe> </div>'
     + '<div id="container"><div id="song-card-list"> </div> </div> '
     + ' <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>'
