@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'programme';
+    src: url(/GENIUS/fonts/Programme-Regular.ttf);
+  }
+
+* {
+    font-family: 'programme', sans-serif;
+}
+  
+body {
+    background-color: #FEFC65;
+}
+
+.genius-logo {
+    height: 9rem;
+    width: auto;
+}
+
+.logo {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    
+}
+.wrapper input, input::placeholder {
+    width: 30%;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: black;
+}
+.wrapper input:focus::placeholder {
+    color: rgb(133, 133, 133);
+}
+
+
+
+h1 {
+    font-family: 'programme', sans-serif;
+    
+}
+
+button {
+    background: rgb(255, 255, 255);
+    border: none;
+    padding: 4px;
+
+}
+
+i {
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+#album-cover:hover {
+    height: 250px;
+    width: auto;
+}
+
+#artist-name {
+    text-align: center;
+}
+
+#artist-names {
+    text-align: center;
+}
+
+
+
+
+
+#lyrics {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.song-title {
+    font-size: 10px;
+}
+
+
+
+#song-card-list {
+    margin-top: 32px;
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+}
+
+#album-cover {
+    text-align: center;
+    width: 230px;
+    height: 230px;
+    background-color: black;
+    margin-bottom: 16px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 20%) 0px 12px 24px 0px, rgb(0 0 0 / 10%) 0px 2px 4px 0px, rgb(255 255 255 / 5%) 0px 0px 0px 1px inset;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+#container {
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+#song-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0 0 0 40px;
+
+}
+
+.artist-names {
+    font-size: 12px;
+    color: #333;
+    max-width: 230px;
+    text-align: left;
+    margin: 0 0 0 40px;
+}
+
+#page-views {
+    color: red;
+    text-align: left;
+    margin: 0 0 0 40px;
+}
+
+.music {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rg_embed {
+    display: block!important;
+}
+
+.new {
+    text-align: center;
+}
+
+#close, #close:hover{
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#close:hover {
+    color: rgb(62, 62, 62);
+}
+
+#song {
+    text-align: center;
+}
+
+
+iframe {
+    text-align: center;
+    width: 50%;
+    height: 64px;
+    border: none;
+}
+
+#frame {
+    text-align: center;
+}
+
+.fa-arrow-left-long {
+    font-size: 30px;
+}
