@@ -181,3 +181,15 @@ iframe {
 .fa-arrow-left-long {
     font-size: 30px;
 }
+
+
+#album-frame {
+    text-align: center;
+}
+
+#album-picture {
+    width: auto;
+    height: 250px;
+    margin-bottom: 30px;
+    box-shadow:0px -1px 7px 0px;;
+}
