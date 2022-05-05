@@ -34,12 +34,12 @@ function sendApiRequest() {
 
     title = record.response.hits;    
     for (var i = 0; i < title.length; i ++) {
-      lyrics = title[i].result.url
-      songId = title[i].result.id
-      songUrl = title[i].result.song_art_image_url
-      songTitle = title[i].result.title
-      songArtist = title[i].result.artist_names
-      songViews = title[i].result.stats.pageviews
+      lyrics = title[i].result.url;
+      songId = title[i].result.id;
+      songUrl = title[i].result.song_art_image_url;
+      songTitle = title[i].result.title;
+      songArtist = title[i].result.artist_names;
+      songViews = title[i].result.stats.pageviews.toLocaleString('en-US');
       ranking = i + 1;
 
       //type = "<li> <a href='" + lyrics + "'><img src='" + title[i].result.song_art_image_url + "'></a></li>";
@@ -47,7 +47,7 @@ function sendApiRequest() {
       + songUrl + "'> <p id='song-title'>" 
       + ranking + ". " + songTitle + "</p> <p class='artist-names'>" 
       + songArtist + "</p>"
-      + "<p id='page-views'> <span style='color:black;'> Page views - </span> " + songViews + "</p> </div>";
+      + "<p id='page-views'> " + songViews + " <span style='color:black;'>page views</span> </p> </div>";
       document.getElementById("song-card-list").innerHTML += type;
       
     }
