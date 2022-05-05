@@ -70,13 +70,14 @@ $(document).ready(function(){
     title = record.response.song.title;
     artist = record.response.song.artist_names;
     player = record.response.song.apple_music_player_url;
-    albumCover = record.response.song.song_art_image_url;    
+    albumCover = record.response.song.song_art_image_url;
+    window.close();
     var tab = window.open();
     tab.document.write('<title>GENIUS</title>' 
     + '<script src="https://kit.fontawesome.com/6c5e78ae37.js" crossorigin="anonymous"></script>' 
     + '<link rel="icon" type="image/x-icon" href="/GENIUS/images/favicon.ico">' 
     + '<link rel="stylesheet" href="/GENIUS/css/main.css">' 
-    + '<h1 id="close"> <i class="fa-solid fa-arrow-left-long"></i>New Search </h1>'
+    + '<h1 id="close"> <i class="fa-solid fa-arrow-left-long"></i><a href="https://alejandro-santos.github.io/GENIUS/">New Search</a></h1>'
     + '<h1 id="artist-names">' + title + '</h1>'
     + '<p id="song">' + artist + '</p>'
     + '<div id="album-frame"> <img id="album-picture" src="' + albumCover + '"></div>'
