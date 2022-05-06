@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'programme';
-    src: url(/GENIUS/fonts/Programme-Regular.ttf);
+    src: url(/fonts/Programme-Regular.ttf);
   }
 
 * {
@@ -67,6 +67,8 @@ i {
 
 #artist-names {
     text-align: center;
+    color: white;
+
 }
 
 
@@ -146,6 +148,7 @@ i {
 
 .rg_embed {
     display: block!important;
+    width: 900px;
 }
 
 .new {
@@ -164,12 +167,17 @@ i {
 
 #song {
     text-align: center;
+    color: white;
+}
+
+#artist-song {
+    color: white;
 }
 
 
 iframe {
     text-align: center;
-    width: 50%;
+    width: 75%;
     height: 64px;
     border: none;
 }
@@ -182,7 +190,6 @@ iframe {
     font-size: 30px;
 }
 
-
 #album-frame {
     text-align: center;
 }
@@ -190,6 +197,79 @@ iframe {
 #album-picture {
     width: auto;
     height: 250px;
-    margin-bottom: 30px;
     box-shadow:0px -1px 7px 0px;;
+}
+
+#youtube {
+    width: 50%;
+    height: auto;
+}
+
+#media-list {
+    text-align: center;
+   
+}
+
+#media-list ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+
+#medias i {
+    font-size: 35px;
+    padding: 0 30;
+
+}
+
+#media-list ul {
+    padding: 0;
+}
+
+.fa-spotify {
+    color: #1ED760;
+}
+
+.fa-youtube {
+    color: #FF0000;
+}
+
+.fa-soundcloud {
+    color: #F85402;
+}
+
+.fa-fire-flame-curved {
+  background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(255, 136, 0));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#artist-picture {
+    border-radius: 50%;
+    height: auto;
+    width: 20rem;
+}
+
+#artist-frame {
+    text-align: center;
+}
+
+#main-stuff {
+    margin-top: 10px;
+    width: 900px;
+    position: fixed;
+    padding: 10px;
+    margin-left: 20px;
+    box-shadow: 0px -1px 15px 0px;
+    background-image: url("/GENIUS/images/grad1.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#all {
+    display: inline;
+}
+
+#song-lyrics {
+    float: right;
 }
