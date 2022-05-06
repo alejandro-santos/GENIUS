@@ -95,7 +95,7 @@ $(document).ready(function(){
     tab.document.write('<title>GENIUS</title>' 
     + '<script src="https://kit.fontawesome.com/6c5e78ae37.js" crossorigin="anonymous"></script>' 
     + '<link rel="icon" type="image/x-icon" href="/GENIUS/images/favicon.ico">' 
-    + '<link rel="stylesheet" href="/css/main.css">' 
+    + '<link rel="stylesheet" href="/GENIUS/css/main.css">' 
     + '<h1 id="close">Close Tab</h1>'
     + '<div id="all"> <div id="main-stuff"> <div id="artist-frame"> <img id="artist-picture" src="' + artistNames + '"> </div>'
     + '<h1 id="artist-names">' + title + '</h1>'
@@ -105,8 +105,8 @@ $(document).ready(function(){
     + '<div id="frame"> <iframe src="' + player + '" title=""></iframe> </div> </div>'
     +  '<div id="song-lyrics">' + lyrics + '</div> </div>'
     + ' <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>'
-    + '<script src="/js/script.js"></script>'
-    + '<script src="/js/result.js"></script>');
+    + '<script src="/GENIUS/js/script.js"></script>'
+    + '<script src="/GENIUS/js/result.js"></script>');
     tab.document.close(); 
   };
 
