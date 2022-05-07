@@ -241,6 +241,7 @@ iframe {
 .fa-fire-flame-curved {
   background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(255, 136, 0));
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
