@@ -76,6 +76,7 @@ $(document).ready(function(){
     title = record.response.song.title;
     artist = record.response.song.artist_names;
     player = record.response.song.apple_music_player_url;
+    album = record.response.song.album.name;
     albumCover = record.response.song.song_art_image_url;
     artistNames = record.response.song.primary_artist.image_url;
     producers = "";    
