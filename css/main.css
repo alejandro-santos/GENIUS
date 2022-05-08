@@ -66,10 +66,26 @@ i {
 }
 
 #artist-names {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     color: white;
 
 }
+
+#producers {
+    color: white;
+    margin-right: auto;
+    width: 65%;
+}
+
+#album-name {
+    width: 29%;
+    margin-right: auto;
+    color: white;
+}
+
 
 
 
@@ -192,6 +208,7 @@ iframe {
 
 #album-frame {
     text-align: center;
+    width: 59%;
 }
 
 #album-picture {
@@ -206,7 +223,7 @@ iframe {
 }
 
 #media-list {
-    text-align: center;
+    text-align: left;
    
 }
 
@@ -224,6 +241,8 @@ iframe {
 
 #media-list ul {
     padding: 0;
+    background: white;
+    border-radius: 10px;
 }
 
 .fa-spotify {
@@ -248,7 +267,7 @@ iframe {
 #artist-picture {
     border-radius: 50%;
     height: auto;
-    width: 20rem;
+    width: 16rem;
 }
 
 #artist-frame {
@@ -273,4 +292,16 @@ iframe {
 
 #song-lyrics {
     float: right;
+}
+
+#content {
+    margin-left: 142px;
+    display: inline-flex;
+    margin-top: 80px;
+    margin-bottom: 78px;
+}
+
+#testing {
+    width: 100%;
+    margin-left: 30px;
 }
