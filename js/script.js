@@ -78,6 +78,7 @@ $(document).ready(function(){
     player = record.response.song.apple_music_player_url;
     albumCover = record.response.song.song_art_image_url;
     artistNames = record.response.song.primary_artist.image_url;
+    producers = "";    
     links = "";
     for (var i = 0; i < record.response.song.media.length; i ++) {
       media = record.response.song.media[i].url;
@@ -91,22 +92,29 @@ $(document).ready(function(){
         links += "<li id='medias'> <a target='_blank' href='" + media + "'> <i class='fa-brands fa-soundcloud'></i> </a> </li>";
       }
     }
+        
+    for (var i = 0; i < record.response.song.producer_artists.length; i ++) {
+      producers +=  record.response.song.producer_artists[i].name + ", " ;
+    }
+        
     var tab = window.open();
     tab.document.write('<title>GENIUS</title>' 
     + '<script src="https://kit.fontawesome.com/6c5e78ae37.js" crossorigin="anonymous"></script>' 
     + '<link rel="icon" type="image/x-icon" href="/GENIUS/images/favicon.ico">' 
-    + '<link rel="stylesheet" href="/GENIUS/css/main.css">' 
+    + '<link rel="stylesheet" href="/css/main.css">' 
     + '<h1 id="close">Close Tab</h1>'
     + '<div id="all"> <div id="main-stuff"> <div id="artist-frame"> <img id="artist-picture" src="' + artistNames + '"> </div>'
     + '<h1 id="artist-names">' + title + '</h1>'
     + '<p id="song">' + artist + '</p>'
-    + '<div id="album-frame"> <img id="album-picture" src="' + albumCover + '"> </div>'
-    + '<div id="media-list"> <ul>' + links + '</ul></div>'
+    + '<div id="content"> <div id="album-frame"> <img id="album-picture" src="' + albumCover + '"> </div>'
+    + '<div id="testing"> <p id="album-name">' + album + '</p>'
+    + '<div id="producers"><p> Produced by' + ' <span style="color:yellow;">'+  producers + '</span></p></div>'
+    + '<div id="media-list"> <ul>' + links + '</ul></div> </div></div>'
     + '<div id="frame"> <iframe src="' + player + '" title=""></iframe> </div> </div>'
     +  '<div id="song-lyrics">' + lyrics + '</div> </div>'
     + ' <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>'
-    + '<script src="/GENIUS/js/script.js"></script>'
-    + '<script src="/GENIUS/js/result.js"></script>');
+    + '<script src="/js/script.js"></script>'
+    + '<script src="/js/result.js"></script>');
     tab.document.close(); 
   };
 
